@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DiscoverItemCell" customModule="TestShaka" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="141"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="141"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icDayTripsAndRoadTrips4" translatesAutoresizingMaskIntoConstraints="NO" id="K2W-lU-ubD">
+                        <rect key="frame" x="5" y="0.0" width="140" height="112.66666666666667"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Tours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceE-aB-4ZD">
+                        <rect key="frame" x="45.666666666666671" y="117.66666666666667" width="58.666666666666671" height="18.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <color key="textColor" red="0.17254901960784313" green="0.2627450980392157" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="K2W-lU-ubD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1wX-Tj-Oim"/>
+                <constraint firstAttribute="trailing" secondItem="K2W-lU-ubD" secondAttribute="trailing" constant="5" id="8XY-fl-jp3"/>
+                <constraint firstItem="ceE-aB-4ZD" firstAttribute="top" secondItem="K2W-lU-ubD" secondAttribute="bottom" constant="5" id="A4K-g0-1qf"/>
+                <constraint firstItem="ceE-aB-4ZD" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="F34-Ge-ugi"/>
+                <constraint firstAttribute="bottom" secondItem="ceE-aB-4ZD" secondAttribute="bottom" constant="5" id="N1H-mx-qWI"/>
+                <constraint firstItem="K2W-lU-ubD" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.8" id="QRl-pb-aXL"/>
+                <constraint firstItem="K2W-lU-ubD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="d73-LY-Bl9"/>
+            </constraints>
+            <size key="customSize" width="150" height="141"/>
+            <connections>
+                <outlet property="placeImage" destination="K2W-lU-ubD" id="oza-vM-7DC"/>
+                <outlet property="placeLabel" destination="ceE-aB-4ZD" id="Bej-Cb-TBb"/>
+            </connections>
+            <point key="canvasLocation" x="203.0534351145038" y="20.774647887323944"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icDayTripsAndRoadTrips4" width="141.66667175292969" height="88"/>
+    </resources>
+</document>
